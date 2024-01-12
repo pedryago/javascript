@@ -1,0 +1,13 @@
+Modulo A - Aula 03
+
+- Bibliografia (Recomendada by Prof. Guanabara)
+	JavaScript - O Guia Definitivo
+	JavaScript - Guia do Programador
+	Gratuitos:
+		Guia de referência da Mozilla
+		Guia de referência da ecma
+
+- Instalar:
+	Navegador (Chrome)
+	VC Code
+	NodeJS
