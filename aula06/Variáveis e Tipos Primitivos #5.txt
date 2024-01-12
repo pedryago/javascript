@@ -1,0 +1,64 @@
+Módulo B - Aula 05
+
+------------------------------------
+
+window. alert()
+	Janela de Alerta
+
+window.confirm()
+	Janela de Confirmação
+
+window.prompt()
+	Interação com o Usuário
+
+-------------------------------------
+
+Comentários:
+
+	// - um única linha
+
+	/* */ - mais de uma linha decódigo
+
+-------------------------------------
+
+		Variáveis
+
+- No JavaScript moderno, além de utilizar a palavra var, também podemos usar a palavra let.
+
+Exs.:    var n1 = 5
+	var n2 = 8.5
+	var n3 = 15
+
+	var s1 = "JavaScript"
+	var s2 = 'Curso em Vídeo'
+	var s3 = `Guanabara`
+
+* Podem começar com letra, $ ou _
+* Não podem começar com números
+* É possível usar letras ou números
+* É possível usar acentos ou símbolos
+* Não podem conter espaços
+* Não podem ser palavras reservadas
+
+Dicas: 
+
+* Maiúsculas e Minúsculas fazem diferença
+* Tente escolher nomes coerentes para variáveis
+* Evite se tornar 'programador alfabeto' ou um 'programador contador'
+
+Data Types:
+
+- number
+	Infinity
+	NaN
+- string
+- boolean
+- null
+- undefined
+- object
+	Array
+	null**
+- function
+- typeof
+
+** Para o JavaScript é um object	

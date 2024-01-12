@@ -1,0 +1,74 @@
+		Tratamento de Dados
+
+<script>
+        var nome = window.prompt('Qual é o seu nome?') // Vai perguntar o nome...
+        window.alert('É um grande prazer em te conhecer, ' + nome + '!') // Concatenação
+</script>
+
+--------------------------------------------
+
+<script>
+        var n1 = window.prompt('Digite um número: ') // O prompt retorna uma String
+        var n2 = window.prompt('Digite outro número: ') // O prompt retorna uma String 
+        var s  = n1 + n2
+        window.alert('A soma dos valores é ' + s) // Concatenação
+        // (number + number) para adição
+        // (string + string) para concatenação
+</script>
+
+---------------------------------------------
+
+String para Número:
+
+-Number.parseInt(n)
+-Number.parseFloat(n)
+-Number(n) // Aceita qualquer tipo do Number(int, float)
+
+Convertendo o código acima:
+
+var n1 = Number.parseInt(window.prompt('Digite um número: ')) // Convertido para Inteiro
+var n2 = Number.parseInt(window.prompt('Digite outro número: ')) // Convertido para Inteiro
+
+---------------------------------------------
+
+Número para String:
+
+- String(n)
+- n.toString()
+
+----------------------------------------------
+
+Formatando Strings:
+
+var s = 'JavaScript'
+'Eu estou aprendendo s'	   // Não faz interpolação
+'Eu estou aprendendo' + s  // usa concatenação
+`Eu estou aprendendo ${s}` // usa template string - usa-se crase
+
+Ex.:
+	var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: ')) 
+        var s  = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // Concatenação
+
+var s = 'JavaScript'
+
+s.length	// quantos caracteres a string tem
+s.toUpperCase()	// tudo para 'MAIÚSCULAS'
+s.toLowerCase()	// tudo para 'minúsculas'
+
+Ex.:
+	<script>
+        	var nome = window.prompt('Qual o seu nome?')
+        	document.write(`Olá,<strong> ${nome}</strong>! Seu nome tem ${nome.length} letras.<br>`)
+        	document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}.`)
+    	</script>
+
+--------------------------------------------
+
+Formatando Números:
+
+var n1 = 1543.5
+n1.toFixed(2) // Duas casas decimais
+n1.toFixed(2).replace('.', ',') // Trocar o ponto(.) por virgula(,)
+n1.toLocalString('pt-BR', {style: 'currency', currency: 'BRL'}) // Mostrar em forma monetária

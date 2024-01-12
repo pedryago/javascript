@@ -1,0 +1,22 @@
+Modulo A - Aula 04
+
+------------------------------------
+
+window. alert()
+	Janela de Alerta
+
+window.confirm()
+	Janela de Confirmação
+
+window.prompt()
+	Interação com o Usuário
+
+-------------------------------------
+
+Comentários:
+
+	// - um única linha
+
+	/* */ - mais de uma linha decódigo
+
+-------------------------------------
