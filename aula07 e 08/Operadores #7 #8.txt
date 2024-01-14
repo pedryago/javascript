@@ -1,0 +1,69 @@
+		Operadores
+
+- aritméticos
+	+  adição
+	-  subtração
+	*  multiplicação
+	/  divisão real
+	%  resto da divisão
+	** potência
+-----------------------------------
+Precedência:
+	↓ ()
+	↓ **
+	↓ * / %
+	↓ + -
+------------------------------------
+Incremento
+
+x = x + 1	x++
+x = x - 1	x--
+------------------------------------
+
+- atribuição
+
+Auto-atribuição		Simplificando
+
+	var n = 3	
+	n = n + 4	n += 4
+	n = n - 5	n -= 5
+	n = n * 4	n *= 4
+	n = n / 2	n /= 2
+	n = n ** 2	n **= 2
+	n = n % 5	n %= 5
+---------------------------------------
+
+- relacionais
+
+	>   maior
+	<   menor
+	>=  maior ou igual
+	<=  menor ou igual
+	==  igual
+	!=  diferente
+
+Identidade
+	5 == 5    -> true
+	5 == '5'  -> true // Javascript não testa os tipos
+	5 === '5' -> false // Se são idênticos (inclusive os tipos)
+--------------------------------------
+
+- lógicos
+
+	!   negação
+	&&  conjunção
+	||  disjunção
+
+Precedência:	
+	↓ !
+	↓ &&
+	↓ ||
+--------------------------------------
+
+- ternário
+
+	?
+	:
+Ex.:
+	teste        ?   true     :   false
+	média >= 7.0 ? "Aprovado" : "Reprovado"
