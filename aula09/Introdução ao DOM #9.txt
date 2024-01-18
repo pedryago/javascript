@@ -112,3 +112,39 @@ a posição 0 é a 1° tag <p>
 a posição 1 é a 2° tag <p>
 a posição 2 é a 3° tag <p> ...
 ----------------------------------------------------------
+
+Diferença entre  .innerText  e  .innerHTML  :
+
+A propriedade  .innerText  serve para DEFINIR ou RETORNAR o CONTEÚDO de TEXTO de um ELEMENTO.
+
+A propriedade  .innerHTML  serve para DEFINIR ou RETORNAR o CONTEÚDO HTML (texto+formatação) de um ELEMENTO.
+
+ILUSTRAÇÃO (crie um outro documento, monte a estrutura básica HTML5 (!+enter) e insira este código dentro do body):
+
+<body>
+    <h1>Diferença entre innerText e InnerHTML:</h1>
+    <p class="teste_1"></p>
+    <p id="teste_2"></p>
+    <script>
+        var variavel_1 = document.querySelector('.teste_1')
+        variavel_1.innerText = "Teste do <strong>innerText</strong>"
+
+        var variavel_2 = document.querySelector('#teste_2')
+        variavel_2.innerHTML = "Teste do <strong>innerHTML</strong>"
+    </script>
+</body>
+
+____________________________
+
+  ALGUMAS DEFINIÇÕES:
+
+*Um OBJETO no JS é um CONTAINER de PROPRIEDADES e MÉTODOS.
+
+*Uma FUNÇÃO no JS é um subprograma que pode receber PARÂMETROS e RETORNAR um resultado. São AÇÕES executadas assim que são CHAMADAS ou em decorrência de algum EVENTO. É um bloco de códigos projetado para executar uma tarefa ou calcular um valor.
+
+*Um MÉTODO no JS é uma FUNÇÃO que está armazenada na forma de um CONJUNTO DE PROPRIEDADES dentro de um OBJETO. Ou seja, MÉTODOS são AÇÕES que podem ser performadas em OBJETOS.
+
+*Um EVENTO no JS é uma CONDIÇÃO que, quando verdadeira, fará a CHAMADA de uma FUNÇÃO.
+
+*O Seletor de Classe é representado por:  .
+*O Seletor de ID é representado por:  #
