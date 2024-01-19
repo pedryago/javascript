@@ -1,0 +1,87 @@
+		Eventos DOM
+
+Evento é tudo aquilo que possa acontecer com o elemento.
+
+Funções: é um conjunto de códigos (linhas) que vão ser executadas só quando o evento ocorrer.
+
+function ação(parametro(s)){
+	bloco
+}
+
+Ex.:
+
+Direto do HTML ---------------------------
+
+ <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja...
+    </div>
+
+    <script>
+        var area = window.document.getElementById('area')
+
+        function clicar(){
+            area.innerText = 'Clicou!'
+            area.style.background = 'red'
+        }
+
+        function entrar(){
+            area.innerText = 'Entrou!'
+        }
+
+        function sair(){
+            area.innerText = 'Saiu!'
+            area.style.background = 'rgb(42, 139, 42)'
+        }
+    </script>
+
+-----------------------------------------------
+
+Ex.: Direto do JavaScript
+
+<div id="area">
+        Interaja...
+    </div>
+
+    <script>
+        var area = window.document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
+        function clicar(){
+            area.innerText = 'Clicou!'
+            area.style.background = 'red'
+        }
+
+        function entrar(){
+            area.innerText = 'Entrou!'
+        }
+
+        function sair(){
+            area.innerText = 'Saiu!'
+            area.style.background = 'rgb(42, 139, 42)'
+        }
+    </script>
+
+__________________________________________________________
+
+Ex.: EX007
+
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    <script>
+        function somar(){
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
+        }
+    </script>
+</body>
