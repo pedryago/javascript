@@ -1,0 +1,11 @@
+		Estrutura de Repetição (for)
+
+For. Ex.:
+	for(c = 1; c <= 10; c++){
+    		console.log(c)
+	}
+
+Depurador:
+	Debug > Start Debugging
+
+	// Serve para ver como o código está funcionando...
